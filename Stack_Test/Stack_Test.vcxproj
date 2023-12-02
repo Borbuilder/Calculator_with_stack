@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\mp2-lab3-stack -forgit\TCalc.cpp" />
     <ClCompile Include="gtest-all.cc" />
     <ClCompile Include="test_calc.cpp" />
     <ClCompile Include="test_main.cpp" />
