@@ -70,6 +70,7 @@ void TCalc::ToPostfix() //Перевод в постфикс
 
 double TCalc::CalculateWithPostfix() //Вычисление с постфиксом
 {
+	//this->ToPostfix();
 	NumStack.ClerStack();
 
 	for (int i = 0; i < postfix.length(); i++)

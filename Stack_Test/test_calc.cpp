@@ -20,6 +20,7 @@ TEST(TCalc, can_set_infix)
 TEST(TCalc, can_translate_infix_to_postfix)
 {
 	TCalc calc("2+2");
+	
 	std::string str = "22+";
 	EXPECT_EQ(1, str == calc.GetPostfix());
 }

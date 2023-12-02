@@ -21,7 +21,7 @@ public:
 	std::string GetPostfix() { return postfix; } // Получить инфиксную строку
 	void SetInfix(std::string _infix) { infix = _infix; } // Записать строку в ификсную строку
 
-	TCalc(std::string _infix) :infix(_infix) { ToPostfix(); } // Конструктор по умолчанию
+	TCalc(std::string _infix) :infix(_infix) { this->ToPostfix(); } // Конструктор по умолчанию
 	double CalculateWithPostfix(); // Метод вычисления c постфиксной 
 	double CalculateNoPostfix(); // Метод вычисления 
 
