@@ -5,9 +5,9 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calculator", "Calculator\Calculator.vcxproj", "{5BF4EEA8-70A8-4518-A0DB-3567F1335185}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mp2-lab3-stack -forgit", "..\Projects\mp2-lab3-stack\mp2-lab3-stack -forgit\mp2-lab3-stack -forgit.vcxproj", "{0E5888D6-3243-4CB1-9283-534F9FC505FC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mp2-lab3-stack -forgit", "mp2-lab3-stack -forgit\mp2-lab3-stack -forgit.vcxproj", "{0E5888D6-3243-4CB1-9283-534F9FC505FC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack_Test", "..\Projects\mp2-lab3-stack\Stack_Test\Stack_Test.vcxproj", "{C1DBBD7A-1A3D-4C7E-AA19-DD22CFB6EC22}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack_Test", "Stack_Test\Stack_Test.vcxproj", "{C1DBBD7A-1A3D-4C7E-AA19-DD22CFB6EC22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
