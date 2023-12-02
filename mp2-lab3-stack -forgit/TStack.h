@@ -26,6 +26,7 @@ public:
 	void ClerStack();  // Метод очистки стека
 	T Pop(); // Метод получения вершины стека (c её перемещением)
 	T Top(); // Метод получения значения вершины стека
+	//int GetCurIndex(); // Получить текущий индекс
 };
 
 
@@ -147,7 +148,7 @@ T TStack<T>::Pop()
 {
 	if (CurrentIndex == -1)
 	{
-		throw "Stack is empty";
+		throw std::exception();
 	}
 	CurrentIndex--;
 	return pMem[CurrentIndex + 1];
@@ -168,3 +169,9 @@ void TStack<T>::ClerStack()
 {
 	CurrentIndex = -1;
 }
+
+/*template <class T> // Получить индекс
+int TStack<T>::GetCurIndex()
+{
+	return CurrentIndex;
+}*/

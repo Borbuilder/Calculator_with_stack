@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mp2-lab3-stack-main.cpp" />
-    <ClCompile Include="TCalc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TCalc.h" />
