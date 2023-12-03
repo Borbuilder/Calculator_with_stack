@@ -26,7 +26,6 @@ public:
 	void ClerStack();  // Метод очистки стека
 	T Pop(); // Метод получения вершины стека (c её перемещением)
 	T Top(); // Метод получения значения вершины стека
-	//int GetCurIndex(); // Получить текущий индекс
 };
 
 
@@ -37,7 +36,7 @@ TStack<T>::TStack(int ms)
 {
 	if (ms < 1)
 	{
-		throw "Неправильный  MaxSize в объекте класса TStack";
+		throw std::exception();
 	}
 	MaxSize = ms;
 	pMem = new T[MaxSize];
@@ -122,7 +121,7 @@ void TStack<T>::output()
 {
 	if (CurrentIndex == -1)
 	{
-		throw "Stack is empty";
+		throw std::exception();
 	}
 	std::cout << "( ";
 	for (int i = 0; i <= CurrentIndex; i++)
@@ -137,7 +136,7 @@ void TStack<T>::Push(const T element)
 {
 	if (CurrentIndex + 1 >= MaxSize)
 	{
-		throw "Stack is overfloated";
+		throw std::exception();
 	}
 	pMem[CurrentIndex + 1] = element;
 	CurrentIndex++;
@@ -159,7 +158,7 @@ T TStack<T>::Top()
 {
 	if (CurrentIndex == -1)
 	{
-		throw "Stack is empty";
+		throw std::exception();
 	}
 	return pMem[CurrentIndex];
 }
@@ -170,8 +169,3 @@ void TStack<T>::ClerStack()
 	CurrentIndex = -1;
 }
 
-/*template <class T> // Получить индекс
-int TStack<T>::GetCurIndex()
-{
-	return CurrentIndex;
-}*/

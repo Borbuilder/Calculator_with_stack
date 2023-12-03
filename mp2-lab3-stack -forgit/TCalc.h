@@ -242,11 +242,11 @@ public:
 		double result = NumStack.Pop();
 		if (!NumStack.empty())
 		{
-			throw "В TStack::Calculate не пустой стек чисел при возврате result";
+			throw std::exception();
 		}
 		if (!OpStack.empty())
 		{
-			throw "В TStack::Calculate не пустой стек операций при возврате result";
+			throw std::exception();
 		}
 		return result;
 	}; // Метод вычисления 
