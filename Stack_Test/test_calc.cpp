@@ -17,23 +17,48 @@ TEST(TCalc, can_set_infix)
 	EXPECT_EQ(1, str == calc.GetInfix());
 }
 
-TEST(TCalc, can_translate_infix_to_postfix)
+TEST(TCalc, can_summ)
 {
 	TCalc calc("2+2");
-	
-	std::string str = "22+";
-	EXPECT_EQ(1, str == calc.GetPostfix());
+	EXPECT_EQ(4, calc.CalculateNoPostfix());
 }
 
-TEST(TCalc, can_correctly_calculate_with_postfix)
+TEST(TCalc, can_milt)
 {
-	TCalc calc("2+2*3-(1+1)");
-	EXPECT_EQ(6, calc.CalculateWithPostfix());
+	TCalc calc("2*2");
+	EXPECT_EQ(4, calc.CalculateNoPostfix());
 }
+
+TEST(TCalc, can_div)
+{
+	TCalc calc("2/2");
+	EXPECT_EQ(1, calc.CalculateNoPostfix());
+}
+
+TEST(TCalc, can_sub)
+{
+	TCalc calc("2-2");
+	EXPECT_EQ(0, calc.CalculateNoPostfix());
+}
+
+TEST(TCalc, can_pow)
+{
+	TCalc calc("2^2");
+	EXPECT_EQ(4, calc.CalculateNoPostfix());
+}
+
 
 TEST(TCalc, can_correctly_calculate_no_postfix)
 {
-	TCalc calc("2+2*3-(1+1)");
-	EXPECT_EQ(6, calc.CalculateNoPostfix());
+	TCalc calc("2^2+2*3-(1+2/2)");
+	EXPECT_EQ(8, calc.CalculateNoPostfix());
 }
+
+TEST(TCalc, can_correctly_calculate_long)
+{
+	TCalc calc("(2^2+2*3-(1+2/2)-100-(32-22))^2-0.1");
+	EXPECT_EQ(10403.9, calc.CalculateNoPostfix());
+}
+
+
 
