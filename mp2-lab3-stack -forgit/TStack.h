@@ -11,21 +11,21 @@ private:
 
 public:
 	
-	TStack(int ms);   // Конструктор по умолчанию
-	TStack(const TStack& StackObject);  // Конструктор копирования
+	TStack(int ms);                                  // Конструктор по умолчанию
+	TStack(const TStack& StackObject);               // Конструктор копирования
 
-	bool operator ==(const TStack& StackObject);  // Оператор сравнения
-	bool operator !=(const TStack& StackObject);  // Оператор сравнения 2
+	bool operator ==(const TStack& StackObject);     // Оператор сравнения
+	bool operator !=(const TStack& StackObject);     // Оператор сравнения 2
 	TStack& operator = (const TStack& StackObject);  // Оператор присваивания
 
-	bool empty(); // Метод проверки стека на пустоту
-	bool full(); // Метод проверки стека на полноту
-	int ElementsNumber(); // Количесвто элементов в стеке
-	void output(); // Метод вывода стека на экран 
-	void Push(const T element); // Метод добавления элемента в стек
-	void ClerStack();  // Метод очистки стека
-	T Pop(); // Метод получения вершины стека (c её перемещением)
-	T Top(); // Метод получения значения вершины стека
+	bool empty();                                    // Метод проверки стека на пустоту
+	bool full();                                     // Метод проверки стека на полноту
+	int ElementsNumber();                            // Количесвто элементов в стеке
+	void output();                                   // Метод вывода стека на экран 
+	void Push(const T element);                      // Метод добавления элемента в стек
+	void ClerStack();                                // Метод очистки стека
+	T Pop();                                         // Метод получения вершины стека (c её перемещением)
+	T Top();                                         // Метод получения значения вершины стека
 };
 
 

@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c1dbbd7a-1a3d-4c7e-aa19-dd22cfb6ec22}</ProjectGuid>
+    <ProjectGuid>{9AAF0EF1-C515-4100-99A9-9266DD55B86D}</ProjectGuid>
     <RootNamespace>StackTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -128,9 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="gtest-all.cc" />
-    <ClCompile Include="test_calc.cpp" />
     <ClCompile Include="test_main.cpp" />
-    <ClCompile Include="test_stack.cpp" />
+    <ClCompile Include="test_tlcalc.cpp" />
+    <ClCompile Include="test_tlstack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gtest.h" />

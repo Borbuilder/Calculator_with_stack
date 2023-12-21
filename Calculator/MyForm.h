@@ -3,7 +3,7 @@
 //#define DllImport  __declspec(dllimport)
 #include<string>
 #include<msclr\marshal_cppstd.h>
-#include "..\mp2-lab3-stack -forgit\TCalc.h"
+#include "../FwrdList_Stack/TLCalc.h"
 
 
 	namespace Calculator {
@@ -172,8 +172,7 @@
 			{
 				std::string infix;
 				infix = msclr::interop::marshal_as<std::string>(textBox1->Text); //Конвертирование String^ в std::string
-
-				TCalc calculator(infix);
+				TLCalc calculator(infix);
 				double result = calculator.CalculateNoPostfix();
 
 				label2->Text = Convert::ToString(result);
